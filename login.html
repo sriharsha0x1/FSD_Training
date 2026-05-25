@@ -4,6 +4,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Login</title>
+		<style>
+			:root{--bg:#f4f7fb;--card:#ffffff;--accent:#2563eb;--muted:#6b7280}
+			*{box-sizing:border-box}
+			body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;color:#111}
+			form{width:320px}
+			fieldset{background:var(--card);border:1px solid #e6e9ef;border-radius:8px;padding:20px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+			legend{font-weight:600;padding:0 4px}
+			h1{text-align:center;margin-bottom:12px;font-size:1.6rem}
+			label{font-size:0.95rem;color:var(--muted)}
+			input[type="text"],input[type="password"]{width:100%;padding:10px 12px;margin-top:6px;border:1px solid #d1d5db;border-radius:6px;font-size:0.95rem}
+			input[type="checkbox"]{margin-right:8px}
+			button{padding:10px 14px;border-radius:6px;border:0;font-weight:600;cursor:pointer}
+			button[type="submit"]{background:var(--accent);color:#fff}
+			button[type="reset"]{background:#eef2ff;color:var(--accent);margin-left:8px}
+			a{color:var(--accent);text-decoration:none;font-size:0.9rem}
+			@media (max-width:360px){form{width:92%}}
+		</style>
 	</head>
 	<body>
 		<h1>Login</h1>
