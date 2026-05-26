@@ -2,7 +2,7 @@
 
 # Task 1
 
-Student 1:
+### Student 1:
 
 Name: Bhoomandla Sri Harsha
 
@@ -14,8 +14,10 @@ Role: Developer 1
 
 ·        Merging pull requests
 
+
+
  
-Student 2:
+### Student 2:
 
 Name: Maddela Swathi
 
