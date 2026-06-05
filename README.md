@@ -53,3 +53,6 @@ ABOUT US PAGE
 
 CONTACT US PAGE
 ![alt text](image-4.png)
+
+FOOTER 
+![alt text](image-5.png)
