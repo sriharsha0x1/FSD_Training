@@ -11,11 +11,22 @@ Open `home.html` in a browser to start using the site.
 Add screenshots of the main pages here after taking them from the browser.
 
 - Home page
+![alt text](image.png)
+
 - Registration page
+![alt text](image-1.png)
+
 - Schedule page
+![alt text](image-2.png)
+
 - Gallery page
+![alt text](image-3.png)
+
 - FAQ page
+![alt text](image-4.png)
+
 - Contact page
+![alt text](image-5.png)
 
 ## Technologies Used
 
