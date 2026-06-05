@@ -37,3 +37,6 @@ Notes
 
 License
 - MIT — feel free to reuse and modify for learning purposes.
+
+Screenshots:
+![alt text](image.png)
