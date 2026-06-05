@@ -1,16 +1,38 @@
 # College Event Management System
 
-Simple, responsive static site to browse college events, register, and view schedules.
+## Project Overview
 
-How to view
-- Open `home.html` in a browser.
+This is a simple responsive website for managing college events. Students can view upcoming events, register for events, check the schedule, browse the gallery, read FAQs, and contact the event coordinator.
 
-Pages
-- `home.html` — Landing page with event highlights
-- `register.html` — Registration form (shows success alert)
-- `schedule.html` — Event schedule (table)
-- `gallery.html` — Event photos
-- `faq.html` — Frequently asked questions (accordion)
-- `contact.html` — Contact form and coordinator info
+Open `home.html` in a browser to start using the site.
 
-Built with Bootstrap 5 and minimal CSS.
+## Screenshots
+
+Add screenshots of the main pages here after taking them from the browser.
+
+- Home page
+- Registration page
+- Schedule page
+- Gallery page
+- FAQ page
+- Contact page
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+## GitHub Repository Link
+
+https://github.com/sriharsha0x1/Student-Management-System.git
+
+## Pages
+
+- `home.html` - Landing page with event highlights
+- `register.html` - Event registration form with success alert
+- `schedule.html` - Event schedule table
+- `gallery.html` - Event photos
+- `faq.html` - Frequently asked questions
+- `contact.html` - Contact form and coordinator details
