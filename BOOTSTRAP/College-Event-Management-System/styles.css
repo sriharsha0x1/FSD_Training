@@ -1,0 +1,74 @@
+:root{
+	--bg: linear-gradient(135deg,#fff7fb 0%, #f7fbff 50%, #fffdf6 100%);
+	--primary:#0d6efd;
+	--accent:#ff6b6b;
+	--accent-2:#6b9bff;
+	--accent-3:#ffd166;
+	--muted:#6c757d;
+	--card-bg:#ffffff;
+	--shadow: 0 6px 28px rgba(16,24,40,0.08);
+	--btn-grad: linear-gradient(90deg,var(--accent),var(--accent-2));
+}
+
+html{scroll-behavior:smooth}
+html{scroll-behavior:smooth}
+body { background: var(--bg); color: #212529; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; -webkit-font-smoothing:antialiased }
+.navbar-logo { height: 40px; width: auto; display: block; margin-right: .6rem; }
+.navbar-brand{font-weight:600}
+.hero-section { background: linear-gradient(120deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15)), linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)), url('background.jpg') center/cover no-repeat; color: #fff; padding-top:5rem; padding-bottom:5rem; border-bottom: 6px solid rgba(107,155,255,0.08); }
+.hero-section .lead{opacity:.9}
+.hero-img, .event-img { object-fit: cover; }
+.hero-img { height: 320px; }
+.event-img { height: 180px; }
+.card{box-shadow:var(--shadow); border:0; overflow:hidden}
+.card .card-img-top{transition:transform .35s ease}
+.card:hover .card-img-top{transform:scale(1.05)}
+.btn-primary{background:var(--primary); border:0; background-image:var(--btn-grad); color:#fff}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(107,155,255,0.12)}
+.btn-primary:focus, .btn:focus{box-shadow:0 0 0 0.25rem rgba(13,110,253,0.15)}
+.footer-dark { background: #212529; color: #fff; }
+.map-placeholder { min-height: 220px; background: #e9ecef; border: 1px dashed #adb5bd; display:flex; align-items:center; justify-content:center; color:var(--muted); }
+.gallery-img { height: 180px; object-fit:cover; }
+.container-smaller { max-width: 1100px; }
+
+/* Visual polish */
+h1,h2,h3{letter-spacing: -0.5px}
+.lead{font-size:1.05rem}
+.card .card-body{transition:transform .22s ease, box-shadow .22s ease}
+.card:hover{transform:translateY(-6px); box-shadow:0 18px 30px rgba(16,24,40,0.08)}
+.btn-light{background:rgba(255,255,255,0.95); color:var(--primary); border:0}
+.navbar-nav{flex-wrap:wrap}
+.navbar .nav-link{color:rgba(255,255,255,0.92); padding:.4rem .6rem}
+.navbar .nav-link.active{font-weight:600}
+
+/* small screens: make nav wrap into multiple lines */
+@media (max-width:576px){
+	.navbar-brand{margin-right:.5rem}
+	.navbar-nav{gap:.4rem}
+}
+
+/* Colorful badges and accents */
+.badge-accent{background:var(--accent); color:#fff}
+.badge-accent-2{background:var(--accent-2); color:#fff}
+.badge-accent-3{background:var(--accent-3); color:#212529}
+.event-badge{display:inline-block; padding:.25rem .5rem; border-radius:.5rem; font-size:.78rem; margin-bottom:.5rem}
+
+/* card footer accent */
+.card .card-footer{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0)); border-top:0}
+
+/* subtle colorful background for event grid */
+.events-rail{background:linear-gradient(180deg, rgba(107,155,255,0.03), rgba(255,214,102,0.02)); padding:1.2rem; border-radius:12px}
+
+/* Responsive tweaks */
+@media (max-width:768px){
+	.hero-img{height:220px}
+	.event-img{height:160px}
+}
+
+/* accessibility */
+a:focus{outline:2px dashed rgba(13,110,253,0.4); outline-offset:2px}
+
+/* show success alert when fragment anchor matches */
+#success{display:none}
+#success:target{display:block}
+
