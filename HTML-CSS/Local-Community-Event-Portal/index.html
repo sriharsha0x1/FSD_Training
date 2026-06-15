@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Excercises</title>
+        <title>Local Community Event Portal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <style>body{background:#e9f0fb url('bg.jpg') center/cover no-repeat}</style>
+</head>
+<body>
+    <header id="mainHeader">
+        <h1 id="heading" style="color:red">Local Community Event Portal</h1> <!-- inline style makes this heading red -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section><h2>Welcome to community portal</h2></section>
+        <section><p>Discover and share local events in your community. Stay connected and engaged with what's happening around you!</p></section>
+                <div class="events-grid">
+                    <div class="eventCard">
+                        <img src="event.jpg" alt="music" class="responsive-img">
+                        <h3>Music in the Park</h3>
+                        <p>Free concert at the central park.</p>
+                    </div>
+                    <div class="eventCard">
+                        <img src="market.jpg" alt="music" class="responsive-img">
+                        <h3>Farmers Market</h3>
+                        <p>Local produce and crafts.</p>
+                    </div>
+                </div>
+
+                <table class="eventsTable">
+                    <thead><tr><th>Date</th><th>Event</th><th>Place</th></tr></thead>
+                    <tbody>
+                        <tr><td>Jun 10</td><td>Music in the Park</td><td>Central Park</td></tr>
+                        <tr><td>Jun 12</td><td>Farmers Market</td><td>Town Square</td></tr>
+                    </tbody>
+                </table>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" class="field" placeholder="Your name">
+                </form>
+
+                <article class="news">
+                    <h3 class="section-title">Community Bulletin</h3>
+                    <p>Local updates, meetings, and volunteer opportunities across the city. Read about neighborhood improvements and council decisions.</p>
+                    <p>Monthly highlights include park upgrades, business openings, and initiative results from community feedback sessions.</p>
+                </article>
+        <!-- <section><h1 >Upcoming Events</h1></section>
+            <section><p>Check out the latest events happening in your area. From festivals to workshops, there's something for everyone!</p></section>
+            <section><h1>Event Categories</h1></section>
+            <section><p>Explore events by category: Music, Art, Sports, Food, and more. Find events that match your interests and passions!</p></section>
+             <section><h1>Community Highlights</h1></section>
+            <section><p>Discover inspiring stories and achievements from your community. Celebrate the people and initiatives that make your neighborhood special!</p></section>
+                <section><h1>Get Involved</h1></section>
+            <section><p>Find out how you can contribute to your community. Volunteer opportunities, local projects, and ways to make a positive impact!</p></section> -->
+
+
+    </main>
+</body>
+</html>
