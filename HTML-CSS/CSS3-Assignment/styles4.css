@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+/* Navigation Bar */
+
+.navbar{
+    background:#002147;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    animation:fadeIn 2s;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#011e7c;
+    border-radius: 20px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#157e78;
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px 20px;
+}
+
+.feature-card{
+    width:250px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    background-color: rgb(152, 198, 236);
+}
+
+/* Login Form */
+
+.login-section{
+    display:flex;
+    justify-content:center;
+    padding:50px 20px;
+}
+
+.login-form{
+    width:100%;
+    max-width:350px;
+    display:flex;
+    background-color: rgb(174, 209, 209);
+    flex-direction:column;
+    gap:15px;
+    padding:25px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    animation:fadeIn 2s;
+}
+
+.login-form input{
+    padding:10px;
+}
+
+.login-form button{
+    width: 60px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    border:none;
+    background:rgb(54, 147, 150);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-form button:hover{
+    background:darkgreen;
+}
+
+/* Product Card */
+
+.product-section{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.product-card{
+    width:300px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background-color: rgb(243, 212, 197);
+    overflow:hidden;
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    transition:0.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.1);
+}
+
+.price{
+    font-size:22px;
+    color:green;
+    margin:10px 0;
+}
+
+.product-card button{
+    margin-bottom:15px;
+    padding:10px 20px;
+    border:none;
+    background:rgb(175, 126, 36);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product-card button:hover{
+    background:darkorange;
+}
+
+/* Footer */
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        width:100%;
+        margin-top:10px;
+    }
+
+    .nav-links li{
+        margin:0;
+        width:100%;
+    }
+
+    .nav-links a{
+        display:block;
+        width:100%;
+        padding:10px;
+    }
+
+    .features{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+/* Student Profile Card */
+
+.profile-section{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+     background-color: rgb(207, 183, 170);
+}
+
+.profile-card{
+    width:500px;
+    display:flex;
+    gap:20px;
+   
+    align-items:center;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    background:white;
+}
+
+.profile-card img{
+    width:180px;
+    height:180px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.student-details h2{
+    margin-bottom:10px;
+}
+
+.student-details p{
+    margin:8px 0;
+}
+
+/* Image Gallery */
+
+.gallery-section{
+    padding:40px 20px;
+}
+
+.gallery-section h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+        width:90%;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .profile-card img{
+        width:150px;
+        height:150px;
+    }
+}

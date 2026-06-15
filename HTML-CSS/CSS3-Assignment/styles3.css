@@ -1,0 +1,116 @@
+.loader{
+    width:50px;
+    height:50px;
+    border:5px solid lightgray;
+    border-top:5px solid blue;
+    border-radius:50%;
+    margin:20px;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+h2{
+    padding:20px;
+}
+
+/* Moving ball */
+.container{
+    width:500px;
+    height:100px;
+    position:relative;
+}
+
+.ball{
+    width:50px;
+    height:50px;
+    background:rgb(180, 178, 56);
+    border-radius:50%;
+    position:absolute;
+    animation:moveBall 3s infinite alternate;
+}
+
+@keyframes moveBall{
+    from{
+        left:0;
+    }
+    to{
+        left:450px;
+    }
+}
+/* Bouncing Text */
+.bounce{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:bounce 1s infinite;
+    display:inline-block;
+    font-size:50px;
+    font-weight:bold;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+/* Traffic Signal Animation */
+.signal{
+    width:100px;
+    padding:10px;
+    background:black;
+    border-radius:10px;
+}
+
+.light{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:gray;
+    margin:10px auto;
+    opacity: 0.2;
+    animation:signal 6s infinite;
+}
+
+.red{
+    background-color: red;
+    animation-delay: 0s;
+}
+
+.yellow{
+    background-color:yellow;
+       animation-delay: 2s;
+}
+
+.green{
+     background-color: green;
+       animation-delay: 4s;
+}
+
+@keyframes redLight{
+    0%,33%{
+        background:red;
+    }
+    34%,100%{
+        background:gray;
+    }
+}
+
+@keyframes signal{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.3;
+    }
+}
