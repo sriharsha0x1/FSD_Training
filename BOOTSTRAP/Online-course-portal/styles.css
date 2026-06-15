@@ -1,0 +1,44 @@
+body {
+  background: #f8f9fa;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #ffc107;
+  color: #212529;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://picsum.photos/seed/banner/1600/700') center/cover no-repeat;
+}
+
+.hero-img,
+.course-img {
+  object-fit: cover;
+  height: 280px;
+}
+
+.footer-dark {
+  background: #212529;
+}
+
+.map-placeholder {
+  min-height: 220px;
+  background: #e9ecef;
+  border: 1px dashed #adb5bd;
+  color: #6c757d;
+}
