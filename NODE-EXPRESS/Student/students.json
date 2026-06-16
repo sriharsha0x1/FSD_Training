@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Bhoomandla Sri Harsha",
+    "branch": "CSE-CS",
+    "cgpa": 9.3
+  },
+  {
+    "id": 2,
+    "name": "Maddela Swathi",
+    "branch": "CSE-CS",
+    "cgpa": 9.6
+  },
+  {
+    "id": 3,
+    "name": "Peddireddy Meghana",
+    "branch": "CSE-CS",
+    "cgpa": 9.3
+  }
+]
