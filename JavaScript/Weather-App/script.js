@@ -1,16 +1,12 @@
 const apiKey = "441bef0c858cdd3d384862ebc1556830";
-
 async function getWeather() {
     const city = document.getElementById("city").value;
-
     if (!city) {
         alert("Please enter a city name");
         return;
     }
-
     const url =
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -19,7 +15,6 @@ async function getWeather() {
             alert("City not found");
             return;
         }
-
         document.getElementById("cityName").innerText =
             `${data.name}, ${data.sys.country}`;
 
