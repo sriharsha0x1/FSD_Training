@@ -33,10 +33,25 @@ function App() {
     setFormData({name:"",age:"",grade:""});
   }
   const filteredStudents=students.filter((s)=>s.name.toLowerCase().includes(search.toLowerCase()))
-  const sortedStundents=[...filteredStudents].sort((a,b)=>a.name.localeCompare(b.name));
+  //const sortedStundents=[...filteredStudents].sort((a,b)=>a.name.localeCompare(b.name));
+const handleSort = () => {
+  const sortedStudents = [...students].sort((a,b) =>
+    ascending
+      ? a.name.localeCompare(b.name)
+      : b.name.localeCompare(a.name)
+  );
+
+  setStudents(sortedStudents);
+  setAscending(!ascending);
+};
   return (
     <div className="App">
-      <input className="form-control" name="search" placeholder='Type to search' onChange={(e)=>setsearch(e.target.value)}></input>
+      <input
+  className="form-control"
+  placeholder="Type to search"
+  value={search}
+  onChange={(e)=>setsearch(e.target.value)}
+/>
       <div className='form'>
         <h2>{editIndex==null?"Add Student" : "Edit Student"}</h2>
         <input className="form-control m-2" name="name" value={formData.name} onChange={handleChange} ></input>
@@ -48,14 +63,16 @@ function App() {
       <h2>Student List</h2>
       <table className='table table-bordered m-3'>
         <thead>
-          <th onClick={setAscending(!ascending)}>NAME</th>
-          <th>AGE</th>
-          <th>GRADE</th>
-          <th>ACTIONS</th>
+          <tr>
+            <th style={{cursor:"pointer"}} onClick={handleSort}>NAME</th>
+            <th>AGE</th>
+            <th>GRADE</th>
+            <th>ACTIONS</th>
+          </tr>
         </thead>
         <tbody>
           {filteredStudents.map((s,index)=>
-            <tr>
+              <tr key={index}>
               <td>{s.name}</td><td>{s.age}</td><td>{s.grade}</td>
               <td><button className='btn btn-primary m-2' onClick={()=>handleEdit(index)}>Edit</button >
               <button className='btn btn-danger' onClick={()=>handleDelete(index)}>Delete</button></td>
